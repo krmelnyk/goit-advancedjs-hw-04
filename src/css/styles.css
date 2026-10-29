@@ -11,7 +11,7 @@
 body { margin: 0; min-width: 320px; }
 .container { max-width: 1160px; margin: 0 auto; padding: 36px 16px; }
 h1 { text-align: center; font-size: 28px; margin-bottom: 24px; }
-.search-form { display: flex; justify-content: center; gap: 8px; }
+.form { display: flex; justify-content: center; gap: 8px; }
 input { width: 272px; min-width: 0; height: 40px; border: 1px solid #808080; border-radius: 4px; padding: 8px 16px; font: inherit; }
 input:hover { border-color: #2e2f42; }
 input:focus { outline: 2px solid #4e75ff; outline-offset: 2px; }
