@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Пошук зображень</title>
+    <title>Image search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Пошук зображень</h1>
+      <h1>Image search</h1>
+      <form class="search-form">
+        <label class="visually-hidden" for="search">Search images</label>
+        <input id="search" name="search" type="search" placeholder="Search images…" maxlength="100" required />
+        <button type="submit">Search</button>
+      </form>
+      <p class="credit">Photos from <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
+      <ul class="gallery" aria-label="Image search results" aria-busy="false"></ul>
+      <button class="load-more" type="button">Load more</button>
+      <div class="loader" role="status"><span class="spinner" aria-hidden="true"></span>Loading images…</div>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
